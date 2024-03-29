@@ -13,6 +13,6 @@ router.post("/refresh",jwtService.requestRefreshToken)
 router.get("/home", authMiddleware.tokenVerify, (req, res) => {
     res.json("Hello")
 })
-router.post("/logout", logoutController)
+router.post("/logout", authMiddleware.tokenVerify,logoutController)
 
 export default router

@@ -19,5 +19,5 @@
     "validator": "^13.11.0"
   },
   "repository": "https://github.com/lamtailoi2/jwt-with-nodejs.git",
-  "author": "Trần Quang Sáng <tranquangsang12.7@gmail.com>"
+  "author": "Loi Lam"
 }

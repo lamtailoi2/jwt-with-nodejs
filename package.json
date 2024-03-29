@@ -17,5 +17,7 @@
     "mongoose": "^8.2.4",
     "redis": "^4.6.13",
     "validator": "^13.11.0"
-  }
+  },
+  "repository": "https://github.com/lamtailoi2/jwt-with-nodejs.git",
+  "author": "Trần Quang Sáng <tranquangsang12.7@gmail.com>"
 }

@@ -15,6 +15,6 @@ const refreshTokenSchema = new Schema({
 })
 
 const refreshTokenModel = model("refreshtokens", refreshTokenSchema)
-//hello
+
 
 export default refreshTokenModel

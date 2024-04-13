@@ -4,14 +4,21 @@ import mongoose from "mongoose"
 import registerRouter from "./src/routes/registerRoute.js"
 import crypto from "crypto"
 import cookieParser from "cookie-parser"
+import cors from "cors"
 
 const app = express()
 const port = 3000
+
 
 mongoose.connect(process.env.DB_URL).then(() => {
     console.log("DB connected");
 })
 
+app.use(cors({
+    origin: "*",
+    methods: ['GET', 'PUT', 'POST', "DELETE"],
+    
+}))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(cookieParser())
